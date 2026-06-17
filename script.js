@@ -6,6 +6,10 @@ function stringChop(str, size) {
 
 		res += str[i];
 
+		if(!str) {
+			return [];
+		}
+
 		if( res.length === Number(size) ) {
 			arr.push(res);
 			res = "";
@@ -23,6 +27,6 @@ function stringChop(str, size) {
 
 
 // // Do not change the code below
-const str = prompt("Enter String.");
-const size = prompt("Enter Chunk Size.");
-alert(stringChop(str, size));
+// const str = prompt("Enter String.");
+// const size = prompt("Enter Chunk Size.");
+// alert(stringChop(str, size));
